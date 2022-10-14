@@ -436,6 +436,11 @@
     "@vue/compiler-dom" "3.2.40"
     "@vue/shared" "3.2.40"
 
+"@vue/devtools-api@^6.1.4":
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.4.4.tgz#0b024fc8ca91bb4b6035abaf53c5aecc17119b3b"
+  integrity sha512-Ku31WzpOV/8cruFaXaEZKF81WkNnvCSlBY4eOGtz5WMSdJvX1v1WWlSMGZeqUwPtQ27ZZz7B62erEMq8JDjcXw==
+
 "@vue/reactivity-transform@3.2.40":
   version "3.2.40"
   resolved "https://registry.yarnpkg.com/@vue/reactivity-transform/-/reactivity-transform-3.2.40.tgz#dc24b9074b26f0d9dd2034c6349f5bb2a51c86ac"
@@ -2930,6 +2935,11 @@ verror@^1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+vite-plugin-electron-renderer@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-electron-renderer/-/vite-plugin-electron-renderer-0.10.1.tgz#0a1db65b79396f7f008effc6ecf10901e8628b17"
+  integrity sha512-N9QXl1QbwAwZesvxMbWpBvYK4BkL4Xt/812RKCAf1b0eOlwW8jEDXuREsax2GBDdAS5kfOjf8V3Trtu/nFvS0A==
+
 vite-plugin-electron@^0.10.1:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/vite-plugin-electron/-/vite-plugin-electron-0.10.1.tgz#f7d4ebe38b91dde8ad8eefec7963c552e8c04b35"
@@ -2968,6 +2978,13 @@ vue-eslint-parser@^9.0.1:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-router@4:
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.5.tgz#256f597e3f5a281a23352a6193aa6e342c8d9f9a"
+  integrity sha512-IsvoF5D2GQ/EGTs/Th4NQms9gd2NSqV+yylxIyp/OYp8xOwxmU8Kj/74E9DTSYAyH5LX7idVUngN3JSj1X4xcQ==
+  dependencies:
+    "@vue/devtools-api" "^6.1.4"
 
 vue-template-compiler@^2.7.10:
   version "2.7.12"

@@ -4,6 +4,10 @@
 
 @layer base {
   html {
-    font-family: Quicksand;
+    font-family: Quicksand, system-ui, sans-serif;
   }
+}
+
+.electron-drag {
+  -webkit-app-region: drag;
 }
