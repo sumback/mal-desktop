@@ -1,0 +1,21 @@
+/**
+ * @see https://prettier.io/docs/en/configuration
+ */
+{
+  printWidth: 120,
+  bracketSameLine: true,
+  singleQuote: true,
+  jsxSingleQuote: true,
+  trailingComma: 'all',
+  tabWidth: 2,
+  semi: true,
+  arrowParens: 'always',
+  overrides: [
+    {
+      files: 'src/**/*.vue',
+      options: {
+        printWidth: 240,
+      },
+    },
+  ],
+}
