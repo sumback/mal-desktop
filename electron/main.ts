@@ -20,19 +20,20 @@ async function createWindow() {
     win.loadFile(join(__dirname, '../index.html'));
   } else {
     win.loadURL(process.env.VITE_DEV_SERVER_URL);
+    win.webContents.openDevTools();
   }
-
-  ipcMain.on('close-window', () => {
-    win.close();
-  });
-
-  ipcMain.on('fullscreen-window', () => {
-    win.isMaximized() ? win.unmaximize() : win.maximize();
-  });
-
-  ipcMain.on('minimize-window', () => {
-    win.minimize();
-  });
 }
 
 app.whenReady().then(createWindow);
+
+ipcMain.on('close-window', () => {
+  win.close();
+});
+
+ipcMain.on('fullscreen-window', () => {
+  win.isMaximized() ? win.unmaximize() : win.maximize();
+});
+
+ipcMain.on('minimize-window', () => {
+  win.minimize();
+});

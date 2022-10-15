@@ -1,3 +1,4 @@
+import { rmSync } from 'fs';
 import { defineConfig } from 'vite';
 import electron from 'vite-plugin-electron';
 import renderer from 'vite-plugin-electron-renderer';
@@ -6,6 +7,8 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 
 import postcss from './postcss.config';
+
+rmSync('dist', { recursive: true, force: true })
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,7 +24,10 @@ export default defineConfig({
     electron({
       entry: 'electron/main.ts',
     }),
-    renderer(/* options */),
+    renderer({
+      nodeIntegration: true,
+      resolve: () => ['path'],
+    }),
   ],
   css: {
     postcss,
